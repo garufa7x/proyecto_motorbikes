@@ -198,7 +198,19 @@
     padding: 10px;
 }
 
+.accordion {
+    --bs-accordion-active-bg:black;
+}
 
+.accordion-item {
+    background-color: black;
+    color: white;
+}
+
+.accordion-button.collapsed {
+    color: rgb(253, 95, 4);
+    background: rgb(51, 66, 94);
+}
 
 /*Motos*/
 .contenedorMotos {
