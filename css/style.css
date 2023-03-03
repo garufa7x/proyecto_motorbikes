@@ -18,9 +18,9 @@
     "contenedorH1 contenedorH1 contenedorH1"
     "noticias noticias noticias"
     "footer     footer         footer";
-    grid-template-rows: 60px 0.5fr 2fr 0.5fr ;  
+    grid-template-rows: 60px 0.3fr 2fr 0.5fr ;  
     grid-template-columns: 1fr 1fr 1fr ;
-    gap: 15px;
+    gap: 10px;
     min-height: 100vh;
     font-family: "Orbitron";
     
@@ -86,6 +86,9 @@
     
 }
 
+.navbar.fixed-top.navbar-expand-lg.bg-body-tertiary.bg-dark{
+    padding: 4px 0px;
+}
 
 /*Titulo H1*/
 .contenedorH1 {
@@ -170,7 +173,7 @@
 
 .redes {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 5px;
 }
 
@@ -184,9 +187,9 @@
     "contenedorH1 contenedorH1 contenedorH1 contenedorH1"
     "seccionHistoria seccionHistoria seccionHistoria seccionHistoria "
     "footer     footer    footer      footer";
-    grid-template-rows: 60px 0.5fr 2fr 0.5fr ;  
+    grid-template-rows: 60px 0.3fr 2fr 0.5fr ;  
     grid-template-columns: 1fr 1fr 1fr 1fr ;
-    gap: 15px;
+    gap: 10px;
     min-height: 100vh;
     font-family: "Orbitron";
 }
@@ -195,10 +198,20 @@
     grid-area: seccionHistoria;
     font-family: "Orbitron";
     color: white;
-    padding: 10px;
+    }
+
+.col-lg-6.col-md-12{
+    padding: 8px;
+}    
+.card-body{
+    background-color: #212529;
 }
 
-.accordion {
+.container.text-center.h3CardHistoria{
+    color: aqua;
+}
+
+/*.accordion {
     --bs-accordion-active-bg:black;
 }
 
@@ -210,7 +223,7 @@
 .accordion-button.collapsed {
     color: rgb(253, 95, 4);
     background: rgb(51, 66, 94);
-}
+}*/
 
 /*Motos*/
 .contenedorMotos {
