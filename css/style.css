@@ -226,22 +226,26 @@
 }*/
 
 /*Motos*/
-.contenedorMotos {
-    padding: 20px;
-    display: flex;
+.cuerpoMotos{
+    font-family: "Orbitron";
 }
 
-.tiposDeMotos {
-    border: 1px solid white;
-    width: 300px;
-    height: 300px;
-    padding: 10px;
-    color: white;
+.contenedorMotos {
+    
+}
+
+
+
+.cuerpoMultimedia{
     font-family: "Orbitron";
-    text-align: center;
 }
 
 /*Contacto*/
+
+.cuerpoContacto{
+    font-family: "Orbitron";
+}
+
 #formulario {
     color: white;
     border: 1px solid white;

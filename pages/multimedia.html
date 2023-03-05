@@ -6,33 +6,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../images/motoFavi.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/style.css">
     <title>¡Motorbikes!</title>
 </head>
 
-<body class="cuerpo">
-    <div class="nav">
-        <ul>
-            <a id="logo" href="../index.html">
-                <li>LOGO</li>
-            </a>
-            <a href="../index.html">
-                <li>Inicio</li>
-            </a>
-            <a href="./historia.html">
-                <li>Historia</li>
-            </a>
-            <a href="./motos.html">
-                <li>Motos</li>
-            </a>
-            <a href="./multimedia.html">
-                <li>Multimedia</li>
-            </a>
-            <a href="./contacto.html">
-                <li>Contacto</li>
-            </a>
-        </ul>
-    </div>
+<body class="cuerpoMultimedia">
+    <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary bg-dark" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html"><img src="../images/motorcycle-svgrepo-com.svg" alt="logo"
+                    width="60" height="60"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link" href="../pages/historia.html">Historia</a>
+                    <a class="nav-link" href="../pages/motos.html">Motos</a>
+                    <a class="nav-link active" aria-current="page" href="#">Multimedia</a>
+                    <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                </div>
+            </div>
+        </div>
+    </nav>
     <div class="contenedorH1">
         <h1 class="tituloH1">Multimedia</h1>
     </div>
@@ -41,7 +38,39 @@
         title="2022 Kawasaki Z900 vs Yamaha MT-09 ┃Power or Tech ?" frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen></iframe>
-    <footer class="footer">Aca va el footer</footer>
+        <footer class="footer">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-4 col-md-12">
+                        <div class="direccion">
+                            <h4>Informacion de contacto</h4>
+                            <p>Direccion: Avenida 13 Nª 8903 La Plata</p>
+                            <p>eMail: motorbikes@motorbikes.com.ar</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                        <div class="redes">
+                            <h4>Seguinos</h4>
+                            <img width="50" src="../images/twitter.svg" alt="Logo de Twitter">
+                            <img width="50" src="../images/facebook.svg" alt="Logo de Facebook">
+                            <img width="50" src="../images/instagram.svg" alt="Logo de Instagram">
+                        </div>
+                    </div>
+    
+                    <div class="col-lg-4 col-md-12">
+                        <div class="suscripcion">
+                            <h4>Suscribite</h4>
+                            <p>Ingresa tu email:</p>
+                            <input type="text">
+                            <button type="submit">Enviar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            </div>
+        </footer>
+    <script src="../scripts/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
