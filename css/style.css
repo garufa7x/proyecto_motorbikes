@@ -13,18 +13,19 @@
 .cuerpo {
     background-color: black;
     display: grid;
-    grid-template-areas: 
-    "nav            nav             nav"
-    "contenedorH1 contenedorH1 contenedorH1"
-    "noticias noticias noticias"
-    "footer     footer         footer";
-    grid-template-rows: 60px 0.3fr 2fr 0.5fr ;  
-    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-areas:
+        "nav            nav             nav"
+        "contenedorH1 contenedorH1 contenedorH1"
+        "noticias noticias noticias"
+        "footer     footer         footer";
+    grid-template-rows: 60px 0.3fr 2fr 0.5fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 10px;
     min-height: 100vh;
     font-family: "Orbitron";
-    
-    
+    padding-top: 10px;
+
+
 }
 
 /*Barra de navegacion*/
@@ -39,27 +40,27 @@
     margin: auto;
     width: 100%;
     background-color: black;
-    
+
 }
 
-.space{
+.space {
     display: flex;
     justify-content: space-between;
 }
 
-.logo{
-  display: inline-block;
-  vertical-align: middle;
-  width: 70px;
+.logo {
+    display: inline-block;
+    vertical-align: middle;
+    width: 70px;
 }
 
 .logo img {
-  display: block;
-  width: 100%;
-  height: auto;
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
-.menu{
+.menu {
     display: flex;
     align-items: center;
 }
@@ -69,7 +70,7 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-        
+
 
 }
 
@@ -83,10 +84,10 @@
     font-size: 2rem;
     padding: 10px;
     text-decoration: none;
-    
+
 }
 
-.navbar.fixed-top.navbar-expand-lg.bg-body-tertiary.bg-dark{
+.navbar.fixed-top.navbar-expand-lg.bg-body-tertiary.bg-dark {
     padding: 4px 0px;
 }
 
@@ -106,7 +107,7 @@
 .contenedorH1 h3 {
     font-size: 20px;
     text-align: center;
-    }
+}
 
 
 
@@ -115,10 +116,10 @@
 .noticias {
     grid-area: noticias;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
     grid-template-areas:
-    "img1 img2 img3"
+        "img1 img2 img3"
     ;
 
 
@@ -137,7 +138,7 @@
     color: white;
     font-family: "Orbitron";
     text-align: center;
-    
+
 }
 
 .seccion2 {
@@ -147,8 +148,8 @@
     color: white;
     font-family: "Orbitron";
     text-align: center;
-    
-     
+
+
 }
 
 .seccion3 {
@@ -165,10 +166,10 @@
     grid-area: footer;
     display: flex;
     justify-content: space-between;
-    color:  rgb(71, 99, 255);
+    color: rgb(71, 99, 255);
     font-family: "Orbitron";
     font-size: 20px;
-    
+
 }
 
 .redes {
@@ -182,13 +183,13 @@
 .cuerpoHistoria {
     background-color: black;
     display: grid;
-    grid-template-areas: 
-    "nav      nav      nav       nav"
-    "contenedorH1 contenedorH1 contenedorH1 contenedorH1"
-    "seccionHistoria seccionHistoria seccionHistoria seccionHistoria "
-    "footer     footer    footer      footer";
-    grid-template-rows: 60px 0.3fr 2fr 0.5fr ;  
-    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    grid-template-areas:
+        "nav      nav      nav       nav"
+        "contenedorH1 contenedorH1 contenedorH1 contenedorH1"
+        "seccionHistoria seccionHistoria seccionHistoria seccionHistoria "
+        "footer     footer    footer      footer";
+    grid-template-rows: 60px 0.3fr 2fr 0.5fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 10px;
     min-height: 100vh;
     font-family: "Orbitron";
@@ -198,16 +199,17 @@
     grid-area: seccionHistoria;
     font-family: "Orbitron";
     color: white;
-    }
+}
 
-.col-lg-6.col-md-12{
+.col-lg-6.col-md-12 {
     padding: 8px;
-}    
-.card-body{
+}
+
+.card-body {
     background-color: #212529;
 }
 
-.container.text-center.h3CardHistoria{
+.container.text-center.h3CardHistoria {
     color: aqua;
 }
 
@@ -226,43 +228,43 @@
 }*/
 
 /*Motos*/
-.cuerpoMotos{
+.cuerpoMotos {
+    padding-top: 80px;
     font-family: "Orbitron";
+    background-color: black;
 }
 
-.contenedorMotos {
-    
-}
-
-
-
-.cuerpoMultimedia{
+/*Multimedia*/
+.cuerpoMultimedia {
     font-family: "Orbitron";
+    padding-top: 80px;
+    background-color: black;
 }
 
 /*Contacto*/
 
-.cuerpoContacto{
+.cuerpoContacto {
     font-family: "Orbitron";
+    background-color: black;
+    padding-top: 80px;
 }
 
 #formulario {
     color: white;
-    border: 1px solid white;
-    display: flex;
-    
 }
 
-@media (max-width:768px){
-    .noticias {grid-template-columns: 1fr;
-            grid-template-rows: 1fr 1fr 1fr;
-            grid-template-areas:
+@media (max-width:768px) {
+    .noticias {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:
             "img1"
             "img2"
-            "img3";}
-    .footer {flex-direction: column;
-            justify-content: space-evenly;}
+            "img3";
+    }
+
+    .footer {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
 }
-
-
-    
