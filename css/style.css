@@ -43,6 +43,7 @@
 
 }
 
+/* Esto es de la navbar anterior
 .space {
     display: flex;
     justify-content: space-between;
@@ -74,11 +75,11 @@
 
 }
 
-/*.nav li {
+.nav li {
     text-align: center;
     
 }
-*/
+
 .nav a {
     color: rgb(71, 99, 255);
     font-size: 2rem;
@@ -86,7 +87,7 @@
     text-decoration: none;
 
 }
-
+*/
 .navbar.fixed-top.navbar-expand-lg.bg-body-tertiary.bg-dark {
     padding: 4px 0px;
 }
@@ -207,13 +208,15 @@
 
 .card-body {
     background-color: #212529;
+    color: white;
 }
 
 .container.text-center.h3CardHistoria {
     color: aqua;
 }
 
-/*.accordion {
+/* Probando estilos en acordiones
+.accordion {
     --bs-accordion-active-bg:black;
 }
 
@@ -245,6 +248,10 @@
     background-color: black;
 }
 
+.container-fluid.sonidos{
+    padding: 15px 0px;
+}
+
 /*Contacto*/
 
 .cuerpoContacto {
@@ -256,6 +263,16 @@
 #formulario {
     color: white;
 }
+
+#emailHelp{
+    color: white;
+}
+
+.mapa{
+    padding: 15px 0px 15px 0px;
+}
+
+/*Mediasqueris*/
 
 @media (max-width:768px) {
     .noticias {

@@ -33,44 +33,96 @@
     <div class="contenedorH1">
         <h1 class="tituloH1">Multimedia</h1>
     </div>
-    <img class="imgMulti" src="../images/ktm1290r.jpg" alt="">
-    <iframe width="1366" height="768" src="https://www.youtube.com/embed/lQNUmHPKiUU"
-        title="2022 Kawasaki Z900 vs Yamaha MT-09 ┃Power or Tech ?" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen></iframe>
-        <footer class="footer">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-4 col-md-12">
-                        <div class="direccion">
-                            <h4>Informacion de contacto</h4>
-                            <p>Direccion: Avenida 13 Nª 8903 La Plata</p>
-                            <p>eMail: motorbikes@motorbikes.com.ar</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-12">
-                        <div class="redes">
-                            <h4>Seguinos</h4>
-                            <img width="50" src="../images/twitter.svg" alt="Logo de Twitter">
-                            <img width="50" src="../images/facebook.svg" alt="Logo de Facebook">
-                            <img width="50" src="../images/instagram.svg" alt="Logo de Instagram">
-                        </div>
-                    </div>
-    
-                    <div class="col-lg-4 col-md-12">
-                        <div class="suscripcion">
-                            <h4>Suscribite</h4>
-                            <p>Ingresa tu email:</p>
-                            <input type="text">
-                            <button type="submit">Enviar</button>
-                        </div>
+
+    <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="../images/ktm1290r.jpg" class="d-block w-100" alt="superduke1290R">
+            </div>
+            <div class="carousel-item">
+                <img src="../images/mv-agusta-brutale-800-rr-scs-2020-1.jpg" class="d-block w-100" alt="brutale800">
+            </div>
+            <div class="carousel-item">
+                <img src="../images/ducati-monster-11.jpg" class="d-block w-100" alt="ducati-monster-11">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <div class="container-fluid sonidos">
+        <div class="row">
+            <div class="col-lg-4 col-md-12">
+                <div class="card">
+                    <div class="card-body">
+                        <p>Sonido Triumph Street Triple 660</p>
+                        <audio controls src="../sound/Triumph_Street_Triple_S_A2mp3.mp3"></audio>
                     </div>
                 </div>
             </div>
-    
+            <div class="col-lg-4 col-md-12">
+                <div class="card">
+                    <div class="card-body">
+                        <p>Sonido Harley Davison WL 45 de 1942</p>
+                        <audio controls src="../sound/Harley_Davidson_WL_45_de_1942.mp3"></audio>
+                    </div>
+                </div>
             </div>
-        </footer>
+            <div class="col-lg-4 col-md-12">
+                <div class="card">
+                    <div class="card-body">
+                        <p>Sonido Honda CRF 450</p>
+                        <audio controls src="../sound/HONDA_CRF_450.mp3"></audio>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="ratio ratio-16x9">
+        <iframe src="https://www.youtube.com/embed/lQNUmHPKiUU"
+            title="2022 Kawasaki Z900 vs Yamaha MT-09 ┃Power or Tech ?" allowfullscreen></iframe>
+    </div>
+
+    <footer class="footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-4 col-md-12">
+                    <div class="direccion">
+                        <h4>Informacion de contacto</h4>
+                        <p>Direccion: Avenida 13 Nª 8903 La Plata</p>
+                        <p>eMail: motorbikes@motorbikes.com.ar</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <div class="redes">
+                        <h4>Seguinos</h4>
+                        <img width="50" src="../images/twitter.svg" alt="Logo de Twitter">
+                        <img width="50" src="../images/facebook.svg" alt="Logo de Facebook">
+                        <img width="50" src="../images/instagram.svg" alt="Logo de Instagram">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <div class="suscripcion">
+                        <h4>Suscribite</h4>
+                        <p>Ingresa tu email:</p>
+                        <input type="text">
+                        <button type="submit">Enviar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
     <script src="../scripts/bootstrap.bundle.min.js"></script>
+
 </body>
 
 </html>
