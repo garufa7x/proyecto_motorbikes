@@ -234,6 +234,10 @@
     background-color: black;
 }
 
+.card-text{
+    color: white;
+}
+
 /*Multimedia*/
 .cuerpoMultimedia {
     font-family: "Orbitron";
