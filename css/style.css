@@ -162,6 +162,10 @@
     text-align: center;
 }
 
+.noticias .seccion1 .pHover:hover, .noticias .seccion2 .pHover:hover, .noticias .seccion3 .pHover:hover {
+    color: red;
+  }
+
 /*Pie*/
 .footer {
     grid-area: footer;

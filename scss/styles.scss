@@ -1,5 +1,10 @@
+@import "./componentes/reset";
+@import "./componentes/tipografias";
+$colorPrincipal: rgb(71, 99, 255);
+$colorDeFondo: black;
+
 .cuerpo {
-    background-color: black;
+    background-color: $colorDeFondo;
     display: grid;
     grid-template-areas:
         "nav            nav             nav"
@@ -27,7 +32,7 @@
     left: 0;
     margin: auto;
     width: 100%;
-    background-color: black;
+    background-color: $colorDeFondo;
 
 }
 
@@ -89,7 +94,7 @@
     align-items: center;
     font-family: "Orbitron";
     font-size: 30px;
-    color: rgb(71, 99, 255);
+    color: $colorPrincipal;
     text-align: center;
 
     h3 {
@@ -107,28 +112,22 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
     grid-template-areas:
-        "img1 img2 img3"
-    ;
-
-    .seccion1 {
-        grid-area: img1;
-        }
+        "img1 img2 img3";
     
-    .seccion2 {
-        grid-area: img2;
-        }
-    
-    .seccion3 {
-        grid-area: img3;
-        }
-
         .seccion1, .seccion2, .seccion3 {
             border: 1px solid white;
             padding: 10px;
             color: white;
             font-family: "Orbitron";
             text-align: center;
-        }
+        
+            .pHover{
+                &:hover{
+                    color:red;
+                }
+            }
+        }    
+
 
 
 }
@@ -139,7 +138,17 @@
     object-fit: cover;
 }
 
+.seccion1 {
+    grid-area: img1;
+    }
 
+.seccion2 {
+    grid-area: img2;
+    }
+
+.seccion3 {
+    grid-area: img3;
+    }
 
 
 /*Pie*/
@@ -147,24 +156,22 @@
     grid-area: footer;
     display: flex;
     justify-content: space-between;
-    color: rgb(71, 99, 255);
+    color: $colorPrincipal;
     font-family: "Orbitron";
     font-size: 20px;
 
-    .redes {
-        display: flex;
-        align-items: flex-start;
-        gap: 5px;
-    }
-
 }
 
-
+.redes {
+    display: flex;
+    align-items: flex-start;
+    gap: 5px;
+}
 
 /*Historia*/
 
 .cuerpoHistoria {
-    background-color: black;
+    background-color: $colorDeFondo;
     display: grid;
     grid-template-areas:
         "nav      nav      nav       nav"
@@ -213,3 +220,69 @@
     color: rgb(253, 95, 4);
     background: rgb(51, 66, 94);
 }*/
+
+/*Motos*/
+.cuerpoMotos {
+    padding-top: 80px;
+    font-family: "Orbitron";
+    background-color: $colorDeFondo;
+}
+
+.card-text{
+    color: white;
+}
+
+/*Multimedia*/
+.cuerpoMultimedia {
+    font-family: "Orbitron";
+    padding-top: 80px;
+    background-color: $colorDeFondo;
+
+    .container-fluid.sonidos{
+        padding: 15px 0px;
+    }
+}
+
+/*Contacto*/
+
+.cuerpoContacto {
+    font-family: "Orbitron";
+    background-color: $colorDeFondo;
+    padding-top: 80px;
+
+    #formulario {
+        color: white;
+
+        #emailHelp{
+            color: white;
+        }
+    }
+
+    .mapa{
+        padding: 15px 0px 15px 0px;
+    }
+}
+
+/*Mediasqueris*/
+
+@media (max-width:768px) {
+    .noticias {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:
+            "img1"
+            "img2"
+            "img3";
+    }
+
+    .footer {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+}
+
+
+
+
+
+
