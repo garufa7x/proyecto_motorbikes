@@ -98,31 +98,27 @@
   grid-template-rows: 1fr;
   grid-template-areas: "img1 img2 img3";
 }
-
-.noticias_img {
-  width: 100%;
-  height: 95%;
-  object-fit: cover;
-}
-
-.seccion1 {
+.noticias .seccion1 {
   grid-area: img1;
 }
-
-.seccion2 {
+.noticias .seccion2 {
   grid-area: img2;
 }
-
-.seccion3 {
+.noticias .seccion3 {
   grid-area: img3;
 }
-
-.seccion1 .seccion2 .seccion3 {
+.noticias .seccion1, .noticias .seccion2, .noticias .seccion3 {
   border: 1px solid white;
   padding: 10px;
   color: white;
   font-family: "Orbitron";
   text-align: center;
+}
+
+.noticias_img {
+  width: 100%;
+  height: 95%;
+  object-fit: cover;
 }
 
 /*Pie*/
@@ -134,8 +130,7 @@
   font-family: "Orbitron";
   font-size: 20px;
 }
-
-.redes {
+.footer .redes {
   display: flex;
   align-items: flex-start;
   gap: 5px;

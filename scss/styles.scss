@@ -110,6 +110,26 @@
         "img1 img2 img3"
     ;
 
+    .seccion1 {
+        grid-area: img1;
+        }
+    
+    .seccion2 {
+        grid-area: img2;
+        }
+    
+    .seccion3 {
+        grid-area: img3;
+        }
+
+        .seccion1, .seccion2, .seccion3 {
+            border: 1px solid white;
+            padding: 10px;
+            color: white;
+            font-family: "Orbitron";
+            text-align: center;
+        }
+
 
 }
 
@@ -119,24 +139,8 @@
     object-fit: cover;
 }
 
-.seccion1 {
-    grid-area: img1;
-    }
 
-.seccion2 {
-    grid-area: img2;
-    }
 
-.seccion3 {
-    grid-area: img3;
-    }
-.seccion1 .seccion2 .seccion3 {
-    border: 1px solid white;
-    padding: 10px;
-    color: white;
-    font-family: "Orbitron";
-    text-align: center;
-}
 
 /*Pie*/
 .footer {
@@ -147,13 +151,15 @@
     font-family: "Orbitron";
     font-size: 20px;
 
+    .redes {
+        display: flex;
+        align-items: flex-start;
+        gap: 5px;
+    }
+
 }
 
-.redes {
-    display: flex;
-    align-items: flex-start;
-    gap: 5px;
-}
+
 
 /*Historia*/
 
