@@ -201,6 +201,13 @@
   font-family: "Orbitron";
   background-color: black;
 }
+.cuerpoMotos .col-lg-6.col-md-12 {
+  padding: 8px;
+}
+.cuerpoMotos .card-body {
+  background-color: #212529;
+  color: white;
+}
 
 .card-text {
   color: white;

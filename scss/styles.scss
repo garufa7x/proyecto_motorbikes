@@ -226,6 +226,15 @@ $colorDeFondo: black;
     padding-top: 80px;
     font-family: "Orbitron";
     background-color: $colorDeFondo;
+
+    .col-lg-6.col-md-12 {
+        padding: 8px;
+    }
+
+    .card-body {
+        background-color: #212529;
+        color: white;
+    }
 }
 
 .card-text{
