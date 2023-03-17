@@ -1,10 +1,15 @@
 @import "./componentes/reset";
 @import "./componentes/tipografias";
+@mixin gridCuerpoEHistoria ($gap, $minHeight, $fontFamily){
+    gap: $gap;
+    min-height: $minHeight;
+    font-family: $fontFamily;
+}
 $colorPrincipal: rgb(71, 99, 255);
 $colorDeFondo: black;
 
 .cuerpo {
-    background-color: $colorDeFondo;
+    background-image: linear-gradient( 112.1deg,  rgba(32,38,57,1) 11.4%, rgba(63,76,119,1) 70.2% );
     display: grid;
     grid-template-areas:
         "nav            nav             nav"
@@ -13,12 +18,8 @@ $colorDeFondo: black;
         "footer     footer         footer";
     grid-template-rows: 60px 0.3fr 2fr 0.5fr;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 10px;
-    min-height: 100vh;
-    font-family: "Orbitron";
-    padding-top: 10px;
-
-
+    @include gridCuerpoEHistoria(10px, 100vh , "Orbitron" );
+    
 }
 
 /*Barra de navegacion*/
@@ -36,51 +37,6 @@ $colorDeFondo: black;
 
 }
 
-/* Esto es de la navbar anterior
-.space {
-    display: flex;
-    justify-content: space-between;
-}
-
-.logo {
-    display: inline-block;
-    vertical-align: middle;
-    width: 70px;
-}
-
-.logo img {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
-.menu {
-    display: flex;
-    align-items: center;
-}
-
-.menu ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-
-
-}
-
-.nav li {
-    text-align: center;
-    
-}
-
-.nav a {
-    color: rgb(71, 99, 255);
-    font-size: 2rem;
-    padding: 10px;
-    text-decoration: none;
-
-}
-*/
 .navbar.fixed-top.navbar-expand-lg.bg-body-tertiary.bg-dark {
     padding: 4px 0px;
 }
@@ -102,6 +58,14 @@ $colorDeFondo: black;
         text-align: center;
     }
 
+}
+
+#h1Index{
+    margin-top: 100px;
+}
+
+#h2Index{
+    margin-bottom: 100px;
 }
 
 /*Seccion*/
@@ -126,9 +90,7 @@ $colorDeFondo: black;
                     color:red;
                 }
             }
-        }    
-
-
+        }
 
 }
 
@@ -180,10 +142,16 @@ $colorDeFondo: black;
         "footer     footer    footer      footer";
     grid-template-rows: 60px 0.3fr 2fr 0.5fr;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 10px;
-    min-height: 100vh;
-    font-family: "Orbitron";
+    @include gridCuerpoEHistoria(10px, 100vh , "Orbitron" );
+
+    #h1Historia{
+        margin-top: 100px;
+    }
     
+    #h2Historia{
+        margin-bottom: 100px;
+    }
+
     .seccionHistoria {
         grid-area: seccionHistoria;
         font-family: "Orbitron";
@@ -205,27 +173,19 @@ $colorDeFondo: black;
 
 }
 
-
-/* Probando estilos en acordiones
-.accordion {
-    --bs-accordion-active-bg:black;
-}
-
-.accordion-item {
-    background-color: black;
-    color: white;
-}
-
-.accordion-button.collapsed {
-    color: rgb(253, 95, 4);
-    background: rgb(51, 66, 94);
-}*/
-
 /*Motos*/
 .cuerpoMotos {
     padding-top: 80px;
     font-family: "Orbitron";
     background-color: $colorDeFondo;
+
+    #h1Motos{
+        margin-top: 100px;
+    }
+
+    #h2Motos{
+        margin-bottom: 100px;
+    }
 
     .col-lg-6.col-md-12 {
         padding: 8px;
@@ -239,6 +199,7 @@ $colorDeFondo: black;
 
 .card-text{
     color: white;
+    text-align: center;
 }
 
 /*Multimedia*/
@@ -246,6 +207,10 @@ $colorDeFondo: black;
     font-family: "Orbitron";
     padding-top: 80px;
     background-color: $colorDeFondo;
+
+    #h1Multimedia{
+        margin: 100px 0 100px 0;
+    }
 
     .container-fluid.sonidos{
         padding: 15px 0px;
@@ -258,6 +223,14 @@ $colorDeFondo: black;
     font-family: "Orbitron";
     background-color: $colorDeFondo;
     padding-top: 80px;
+
+    #h1Contacto{
+        margin-top: 100px;
+    }
+
+    #h2Contacto{
+        margin-bottom: 100px;
+    }
 
     #formulario {
         color: white;
