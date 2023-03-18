@@ -10,22 +10,12 @@ $colorDeFondo: black;
 
 .cuerpo {
     background-image: linear-gradient( 112.1deg,  rgba(32,38,57,1) 11.4%, rgba(63,76,119,1) 70.2% );
-    display: grid;
-    grid-template-areas:
-        "nav            nav             nav"
-        "contenedorH1 contenedorH1 contenedorH1"
-        "noticias noticias noticias"
-        "footer     footer         footer";
-    grid-template-rows: 60px 0.3fr 2fr 0.5fr;
-    grid-template-columns: 1fr 1fr 1fr;
     @include gridCuerpoEHistoria(10px, 100vh , "Orbitron" );
     
 }
 
 /*Barra de navegacion*/
 .nav {
-    grid-area: nav;
-    /*display: flex;*/
     align-items: center;
     font-family: "Orbitron";
     position: fixed;
@@ -71,19 +61,8 @@ $colorDeFondo: black;
 /*Seccion*/
 
 .noticias {
-    grid-area: noticias;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr;
-    grid-template-areas:
-        "img1 img2 img3";
-    
-        .seccion1, .seccion2, .seccion3 {
-            border: 1px solid white;
-            padding: 10px;
-            color: white;
-            font-family: "Orbitron";
-            text-align: center;
+    font-family: "Orbitron";
+    text-align: center;
         
             .pHover{
                 &:hover{
@@ -92,32 +71,8 @@ $colorDeFondo: black;
             }
         }
 
-}
-
-.noticias_img {
-    width: 100%;
-    height: 95%;
-    object-fit: cover;
-}
-
-.seccion1 {
-    grid-area: img1;
-    }
-
-.seccion2 {
-    grid-area: img2;
-    }
-
-.seccion3 {
-    grid-area: img3;
-    }
-
-
 /*Pie*/
 .footer {
-    grid-area: footer;
-    display: flex;
-    justify-content: space-between;
     color: $colorPrincipal;
     font-family: "Orbitron";
     font-size: 20px;
@@ -134,14 +89,6 @@ $colorDeFondo: black;
 
 .cuerpoHistoria {
     background-color: $colorDeFondo;
-    display: grid;
-    grid-template-areas:
-        "nav      nav      nav       nav"
-        "contenedorH1 contenedorH1 contenedorH1 contenedorH1"
-        "seccionHistoria seccionHistoria seccionHistoria seccionHistoria "
-        "footer     footer    footer      footer";
-    grid-template-rows: 60px 0.3fr 2fr 0.5fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
     @include gridCuerpoEHistoria(10px, 100vh , "Orbitron" );
 
     #h1Historia{
@@ -153,7 +100,6 @@ $colorDeFondo: black;
     }
 
     .seccionHistoria {
-        grid-area: seccionHistoria;
         font-family: "Orbitron";
         color: white;
 
