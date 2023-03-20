@@ -1,17 +1,19 @@
 @import "./componentes/reset";
 @import "./componentes/tipografias";
-@mixin gridCuerpoEHistoria ($gap, $minHeight, $fontFamily){
+
+@mixin gridCuerpoEHistoria ($gap, $minHeight, $fontFamily) {
     gap: $gap;
     min-height: $minHeight;
     font-family: $fontFamily;
 }
+
 $colorPrincipal: rgb(71, 99, 255);
 $colorDeFondo: black;
 
 .cuerpo {
-    background-image: linear-gradient( 112.1deg,  rgba(32,38,57,1) 11.4%, rgba(63,76,119,1) 70.2% );
-    @include gridCuerpoEHistoria(10px, 100vh , "Orbitron" );
-    
+    background-image: linear-gradient(112.1deg, rgba(32, 38, 57, 1) 11.4%, rgba(63, 76, 119, 1) 70.2%);
+    @include gridCuerpoEHistoria(10px, 100vh, "Orbitron");
+
 }
 
 /*Barra de navegacion*/
@@ -33,28 +35,19 @@ $colorDeFondo: black;
 
 /*Titulo H1*/
 .contenedorH1 {
-    grid-area: contenedorH1;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
     font-family: "Orbitron";
     font-size: 30px;
     color: $colorPrincipal;
     text-align: center;
 
-    h3 {
-        font-size: 20px;
-        text-align: center;
-    }
 
 }
 
-#h1Index{
+#h1Index {
     margin-top: 100px;
 }
 
-#h2Index{
+#h2Index {
     margin-bottom: 100px;
 }
 
@@ -63,19 +56,27 @@ $colorDeFondo: black;
 .noticias {
     font-family: "Orbitron";
     text-align: center;
-        
-            .pHover{
-                &:hover{
-                    color:red;
-                }
-            }
+
+    .card.h-100 {
+        .card-text{
+            color: black;
         }
+        &:hover {
+            transform: scale(1.1);
+            transition: all 0.3s;
+        }
+    }
+
+
+}
 
 /*Pie*/
 .footer {
     color: $colorPrincipal;
     font-family: "Orbitron";
     font-size: 20px;
+    margin-top: 40px;
+    margin-bottom: 24px;
 
 }
 
@@ -89,13 +90,13 @@ $colorDeFondo: black;
 
 .cuerpoHistoria {
     background-color: $colorDeFondo;
-    @include gridCuerpoEHistoria(10px, 100vh , "Orbitron" );
+    @include gridCuerpoEHistoria(10px, 100vh, "Orbitron");
 
-    #h1Historia{
+    #h1Historia {
         margin-top: 100px;
     }
-    
-    #h2Historia{
+
+    #h2Historia {
         margin-bottom: 100px;
     }
 
@@ -121,15 +122,14 @@ $colorDeFondo: black;
 
 /*Motos*/
 .cuerpoMotos {
-    padding-top: 80px;
     font-family: "Orbitron";
     background-color: $colorDeFondo;
 
-    #h1Motos{
+    #h1Motos {
         margin-top: 100px;
     }
 
-    #h2Motos{
+    #h2Motos {
         margin-bottom: 100px;
     }
 
@@ -143,7 +143,7 @@ $colorDeFondo: black;
     }
 }
 
-.card-text{
+.card-text {
     color: white;
     text-align: center;
 }
@@ -151,14 +151,13 @@ $colorDeFondo: black;
 /*Multimedia*/
 .cuerpoMultimedia {
     font-family: "Orbitron";
-    padding-top: 80px;
     background-color: $colorDeFondo;
 
-    #h1Multimedia{
+    #h1Multimedia {
         margin: 100px 0 100px 0;
     }
 
-    .container-fluid.sonidos{
+    .container.sonidos {
         padding: 15px 0px;
     }
 }
@@ -168,49 +167,24 @@ $colorDeFondo: black;
 .cuerpoContacto {
     font-family: "Orbitron";
     background-color: $colorDeFondo;
-    padding-top: 80px;
-
-    #h1Contacto{
+    
+    #h1Contacto {
         margin-top: 100px;
     }
 
-    #h2Contacto{
+    #h2Contacto {
         margin-bottom: 100px;
     }
 
     #formulario {
         color: white;
 
-        #emailHelp{
+        #emailHelp {
             color: white;
         }
     }
 
-    .mapa{
+    .mapa {
         padding: 15px 0px 15px 0px;
     }
 }
-
-/*Mediasqueris*/
-
-@media (max-width:768px) {
-    .noticias {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-template-areas:
-            "img1"
-            "img2"
-            "img3";
-    }
-
-    .footer {
-        flex-direction: column;
-        justify-content: space-evenly;
-    }
-}
-
-
-
-
-
-
