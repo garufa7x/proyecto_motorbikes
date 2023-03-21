@@ -1,66 +1,56 @@
 @import "./componentes/reset";
 @import "./componentes/tipografias";
 
-@mixin gridCuerpoEHistoria ($gap, $minHeight, $fontFamily) {
+@mixin cuerpos ($gap, $minHeight, $fontFamily) {
     gap: $gap;
     min-height: $minHeight;
     font-family: $fontFamily;
+}
+@mixin contenedorH1($fontFamily, $fontSize, $color, $textAling, $margen){
+    font-family: $fontFamily;
+    font-size: $fontSize;
+    color: $color;
+    text-align: $textAling;
+    margin: $margen;
 }
 
 $colorPrincipal: rgb(71, 99, 255);
 $colorDeFondo: black;
 
-.cuerpo {
+/*A todos los bodys*/
+.cuerpo,
+.cuerpoHistoria,
+.cuerpoMotos,
+.cuerpoMultimedia,
+.cuerpoContacto {
     background-image: linear-gradient(112.1deg, rgba(32, 38, 57, 1) 11.4%, rgba(63, 76, 119, 1) 70.2%);
-    @include gridCuerpoEHistoria(10px, 100vh, "Orbitron");
+    @include cuerpos(10px, 100vh, "Orbitron");
 
 }
 
-/*Barra de navegacion*/
-.nav {
-    align-items: center;
-    font-family: "Orbitron";
-    position: fixed;
-    top: 0;
-    left: 0;
-    margin: auto;
-    width: 100%;
-    background-color: $colorDeFondo;
-
-}
-
+/*Pading para la nav*/
 .navbar.fixed-top.navbar-expand-lg.bg-body-tertiary.bg-dark {
     padding: 4px 0px;
 }
 
-/*Titulo H1*/
+/*Titulos*/
 .contenedorH1 {
-    font-family: "Orbitron";
-    font-size: 30px;
-    color: $colorPrincipal;
-    text-align: center;
+    @include contenedorH1("Orbitron", 30px, $colorPrincipal, center, 100px 0 100px 0);
+       }
+.contenedorH3 {
+    @include contenedorH1("Orbitron", 30px, $colorPrincipal, center, 50px 0 50px 0);
+    }       
 
-
-}
-
-#h1Index {
-    margin-top: 100px;
-}
-
-#h2Index {
-    margin-bottom: 100px;
-}
-
-/*Seccion*/
-
+/*Seccion Noticias*/
 .noticias {
     font-family: "Orbitron";
     text-align: center;
 
     .card.h-100 {
-        .card-text{
+        .card-text {
             color: black;
         }
+
         &:hover {
             transform: scale(1.1);
             transition: all 0.3s;
@@ -70,7 +60,7 @@ $colorDeFondo: black;
 
 }
 
-/*Pie*/
+/*Footer*/
 .footer {
     color: $colorPrincipal;
     font-family: "Orbitron";
@@ -86,19 +76,8 @@ $colorDeFondo: black;
     gap: 5px;
 }
 
-/*Historia*/
-
+/*Seccion Historia*/
 .cuerpoHistoria {
-    background-color: $colorDeFondo;
-    @include gridCuerpoEHistoria(10px, 100vh, "Orbitron");
-
-    #h1Historia {
-        margin-top: 100px;
-    }
-
-    #h2Historia {
-        margin-bottom: 100px;
-    }
 
     .seccionHistoria {
         font-family: "Orbitron";
@@ -120,18 +99,8 @@ $colorDeFondo: black;
 
 }
 
-/*Motos*/
+/*Seccion Motos*/
 .cuerpoMotos {
-    font-family: "Orbitron";
-    background-color: $colorDeFondo;
-
-    #h1Motos {
-        margin-top: 100px;
-    }
-
-    #h2Motos {
-        margin-bottom: 100px;
-    }
 
     .col-lg-6.col-md-12 {
         padding: 8px;
@@ -148,14 +117,8 @@ $colorDeFondo: black;
     text-align: center;
 }
 
-/*Multimedia*/
+/*Seccion Multimedia*/
 .cuerpoMultimedia {
-    font-family: "Orbitron";
-    background-color: $colorDeFondo;
-
-    #h1Multimedia {
-        margin: 100px 0 100px 0;
-    }
 
     .container.sonidos {
         padding: 15px 0px;
@@ -163,18 +126,7 @@ $colorDeFondo: black;
 }
 
 /*Contacto*/
-
 .cuerpoContacto {
-    font-family: "Orbitron";
-    background-color: $colorDeFondo;
-    
-    #h1Contacto {
-        margin-top: 100px;
-    }
-
-    #h2Contacto {
-        margin-bottom: 100px;
-    }
 
     #formulario {
         color: white;

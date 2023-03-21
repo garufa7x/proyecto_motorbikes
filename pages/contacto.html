@@ -1,6 +1,8 @@
+<!--Declaro doc html5-->
 <!DOCTYPE html>
 <html lang="en">
 
+<!--meta links favicon css titulo del sitio-->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,7 +14,7 @@
     <title>¡Motorbikes!</title>
 </head>
 
-
+<!--cuerpo principal de pagina Contacto -->
 <body class="container cuerpoContacto">
     <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary bg-dark" data-bs-theme="dark">
         <div class="container-fluid">
@@ -32,11 +34,14 @@
             </div>
         </div>
     </nav>
+
+    <!--Contenedor Titulos-->
     <div class="contenedorH1">
-        <h1 class="tituloH1" id="h1Contacto">Contacto</h1>
-        <h2 id="h2Contacto">Sumate al newslatter</h2>
+        <h1>Contacto</h1>
+        <h2>Sumate al newslatter</h2>
     </div>
 
+    <!--Contenedor Formulario-->
     <form id="formulario">
         <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label">Correo electrónico</label>
@@ -53,6 +58,8 @@
         </div>
         <button type="submit" class="btn btn-primary">Enviar</button>
     </form>
+
+    <!--Contenedor Mapa-->
     <div class="mapa">
         <div class="container">
             <div class="row">
@@ -64,7 +71,7 @@
         </div>
     </div>
 
-
+    <!--Footer-->
     <footer class="footer">
         <div class="container">
           <div class="row">
@@ -93,14 +100,15 @@
                   <h4>Suscribite</h4>
                   <p>Ingresa tu email:</p>
                   <input type="text">
-                  <button type="submit">Enviar</button>
+                  <button type="button" class="btn btn-outline-primary">Enviar</button>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </footer>
-    
+
+      <!--Scripts bootstrap y aos -->
       <script src="../scripts/bootstrap.bundle.min.js"></script>
       <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
       <script>AOS.init();</script>

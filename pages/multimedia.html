@@ -1,6 +1,8 @@
+<!--Declaro doc html5-->
 <!DOCTYPE html>
 <html lang="en">
 
+<!--meta links favicon css titulo del sitio-->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,6 +14,7 @@
     <title>¡Motorbikes!</title>
 </head>
 
+<!--cuerpo principal de pagina Multimedia -->
 <body class="container cuerpoMultimedia">
     <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary bg-dark" data-bs-theme="dark">
         <div class="container-fluid">
@@ -31,9 +34,14 @@
             </div>
         </div>
     </nav>
+
+    <!--Contenedor Titulos-->
     <div class="contenedorH1">
-        <h1 class="tituloH1" id="h1Multimedia">Multimedia</h1>
+        <h1>Multimedia</h1>
+        <h2>Disfruta de tus sentidos</h2>
     </div>
+
+    <!--Contenedor Carousel-->
     <div class="container">
         <div id="carouselExample" class="carousel slide">
             <div class="carousel-inner">
@@ -58,27 +66,31 @@
         </div>
     </div>
 
+    <!--Contenedor TituloH3-->
+    <h3 class="contenedorH3">¡Música motorizada!</h3>
+
+    <!--Contenedor Sonidos-->
     <div class="container sonidos">
-        <div class="row">
-            <div class="col-md-4 ">
+        <div class="row gy-3">
+            <div class="col-xl-4 ">
                 <div class="card">
-                    <div class="card-body">
+                    <div class="card-body text-center">
                         <p>Sonido Triumph Street Triple 660</p>
                         <audio controls src="../sound/Triumph_Street_Triple_S_A2mp3.mp3"></audio>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-xl-4">
                 <div class="card">
-                    <div class="card-body">
-                        <p>Sonido Harley Davison WL 45 de 1942</p>
+                    <div class="card-body text-center">
+                        <p>Sonido Harley Davison WL 45 1942</p>
                         <audio controls src="../sound/Harley_Davidson_WL_45_de_1942.mp3"></audio>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-xl-4">
                 <div class="card">
-                    <div class="card-body">
+                    <div class="card-body text-center">
                         <p>Sonido Honda CRF 450</p>
                         <audio controls src="../sound/HONDA_CRF_450.mp3"></audio>
                     </div>
@@ -87,50 +99,56 @@
         </div>
     </div>
 
+    <!--Contenedor TituloH3-->
+    <h3 class="contenedorH3">¡Videos!</h3>
+
+    <!--Contenedor Videos-->
     <div class="container ratio ratio-16x9">
         <iframe src="https://www.youtube.com/embed/lQNUmHPKiUU"
             title="2022 Kawasaki Z900 vs Yamaha MT-09 ┃Power or Tech ?" allowfullscreen></iframe>
     </div>
 
+    <!--Footer-->
     <footer class="footer">
         <div class="container">
-          <div class="row">
-            <div class="col-lg-4 col-md-12">
-              <div data-aos="fade-up">
-                <div class="direccion">
-                  <h4>Informacion de contacto</h4>
-                  <p>Direccion: Avenida 13 Nª 8903 La Plata</p>
-                  <p>eMail: motorbikes@motorbikes.com.ar</p>
+            <div class="row">
+                <div class="col-lg-4 col-md-12">
+                    <div data-aos="fade-up">
+                        <div class="direccion">
+                            <h4>Informacion de contacto</h4>
+                            <p>Direccion: Avenida 13 Nª 8903 La Plata</p>
+                            <p>eMail: motorbikes@motorbikes.com.ar</p>
+                        </div>
+                    </div>
                 </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-12">
-              <div data-aos="flip-left">
-                <div class="redes">
-                  <h4>Seguinos</h4>
-                  <img width="50" src="../images/twitter.svg" alt="Logo de Twitter">
-                  <img width="50" src="../images/facebook.svg" alt="Logo de Facebook">
-                  <img width="50" src="../images/instagram.svg" alt="Logo de Instagram">
+                <div class="col-lg-4 col-md-12">
+                    <div data-aos="flip-left">
+                        <div class="redes">
+                            <h4>Seguinos</h4>
+                            <img width="50" src="../images/twitter.svg" alt="Logo de Twitter">
+                            <img width="50" src="../images/facebook.svg" alt="Logo de Facebook">
+                            <img width="50" src="../images/instagram.svg" alt="Logo de Instagram">
+                        </div>
+                    </div>
                 </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-12">
-              <div data-aos="fade-up">
-                <div class="suscripcion">
-                  <h4>Suscribite</h4>
-                  <p>Ingresa tu email:</p>
-                  <input type="text">
-                  <button type="submit">Enviar</button>
+                <div class="col-lg-4 col-md-12">
+                    <div data-aos="fade-up">
+                        <div class="suscripcion">
+                            <h4>Suscribite</h4>
+                            <p>Ingresa tu email:</p>
+                            <input type="text">
+                            <button type="button" class="btn btn-outline-primary">Enviar</button>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
         </div>
-      </footer>
-    
-      <script src="../scripts/bootstrap.bundle.min.js"></script>
-      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-      <script>AOS.init();</script>
+    </footer>
+
+    <!--Scripts bootstrap y aos -->
+    <script src="../scripts/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
 
 </body>
 
