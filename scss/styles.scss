@@ -16,6 +16,7 @@
 
 $colorPrincipal: rgb(71, 99, 255);
 $colorDeFondo: black;
+$gradienteLineal: linear-gradient(112.1deg, rgba(32, 38, 57, 1) 11.4%, rgba(63, 76, 119, 1) 70.2%);
 
 /*A todos los bodys*/
 .cuerpo,
@@ -67,6 +68,9 @@ $colorDeFondo: black;
     font-size: 20px;
     margin-top: 40px;
     margin-bottom: 24px;
+    .mail{
+        color: #ee752f;
+    }
 
 }
 
@@ -74,6 +78,14 @@ $colorDeFondo: black;
     display: flex;
     align-items: flex-start;
     gap: 5px;
+    
+    .card.h-101{
+        background: none;
+        &:hover {
+            transform: scale(1.1);
+            transition: all 0.3s;
+        }
+    }
 }
 
 /*Seccion Historia*/

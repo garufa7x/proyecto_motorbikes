@@ -64,11 +64,21 @@
   margin-top: 40px;
   margin-bottom: 24px;
 }
+.footer .mail {
+  color: #ee752f;
+}
 
 .redes {
   display: flex;
   align-items: flex-start;
   gap: 5px;
+}
+.redes .card.h-101 {
+  background: none;
+}
+.redes .card.h-101:hover {
+  transform: scale(1.1);
+  transition: all 0.3s;
 }
 
 /*Seccion Historia*/
