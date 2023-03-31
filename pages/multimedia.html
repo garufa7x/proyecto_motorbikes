@@ -3,6 +3,7 @@
 <html lang="en">
 
 <!--meta links favicon css titulo del sitio-->
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,6 +16,7 @@
 </head>
 
 <!--cuerpo principal de pagina Multimedia -->
+
 <body class="container cuerpoMultimedia">
     <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary bg-dark" data-bs-theme="dark">
         <div class="container-fluid">
@@ -66,6 +68,13 @@
         </div>
     </div>
 
+    <h3 class="contenedorH3">¡Jueguito vicioso!</h3>
+    <div class="container ratio ratio-16x9">
+        <iframe style="height:100%;width:100%"
+            src="https://games.cdn.famobi.com/html5games/m/moto-x3m/v100/?fg_domain=play.famobi.com&fg_aid=A-O9JYH&fg_uid=442157bb-0a48-4e9b-9fa6-e1503f16e8e3&fg_pid=4e5f1429-8e41-4902-8f28-f0662edb1836&fg_beat=622&original_ref=https%3A%2F%2Fplay.famobi.com%2Fmoto-x3m%2FA-O9JYH"
+            frameborder="0" scrolling="no"></iframe>
+    </div>
+
     <!--Contenedor TituloH3-->
     <h3 class="contenedorH3">¡Música motorizada!</h3>
 
@@ -76,7 +85,7 @@
                 <div class="card">
                     <div class="card-body text-center">
                         <p>Sonido Triumph Street Triple 660</p>
-                        <audio controls src="../sound/Triumph_Street_Triple_S_A2mp3.mp3"></audio>
+                        <audio controls style="width:100%" src="../sound/Triumph_Street_Triple_S_A2mp3.mp3"></audio>
                     </div>
                 </div>
             </div>
@@ -84,7 +93,7 @@
                 <div class="card">
                     <div class="card-body text-center">
                         <p>Sonido Harley Davison WL 45 1942</p>
-                        <audio controls src="../sound/Harley_Davidson_WL_45_de_1942.mp3"></audio>
+                        <audio controls style="width:100%" src="../sound/Harley_Davidson_WL_45_de_1942.mp3"></audio>
                     </div>
                 </div>
             </div>
@@ -92,7 +101,7 @@
                 <div class="card">
                     <div class="card-body text-center">
                         <p>Sonido Honda CRF 450</p>
-                        <audio controls src="../sound/HONDA_CRF_450.mp3"></audio>
+                        <audio controls style="width:100%" src="../sound/HONDA_CRF_450.mp3"></audio>
                     </div>
                 </div>
             </div>
@@ -103,54 +112,68 @@
     <h3 class="contenedorH3">¡Videos!</h3>
 
     <!--Contenedor Videos-->
-    <div class="container ratio ratio-16x9">
-        <iframe src="https://www.youtube.com/embed/lQNUmHPKiUU"
-            title="2022 Kawasaki Z900 vs Yamaha MT-09 ┃Power or Tech ?" allowfullscreen></iframe>
+    <div class="container">
+        <div class="row g-4">
+            <div class="ratio ratio-16x9">
+                <iframe src="https://www.youtube.com/embed/lQNUmHPKiUU"
+                    title="2022 Kawasaki Z900 vs Yamaha MT-09 ┃Power or Tech ?" allowfullscreen></iframe>
+            </div>
+            <div class="ratio ratio-16x9">
+                <iframe src="https://www.youtube.com/embed/Rv89j0RLPS0" title="Review Voge 300 DS" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
     </div>
 
+    
     <!--Footer-->
-    <footer class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-md-12">
-                    <div data-aos="fade-up">
-                        <div class="direccion">
-                            <h4>Informacion de contacto</h4>
-                            <p>Direccion: Avenida 13 Nª 8903 La Plata</p>
-                            <p class="mail">eMail: motorbikes@motors.com</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-12">
-                    <div data-aos="flip-left">
-                        <div class="redes">
-                            <h4>Seguinos</h4>
-                            <a href="https://twitter.com/MotorbikeMag" target="_blank" rel="noopener noreferrer"><img
-                                    width="50" src="../images/twitter.svg" alt="Logo de Twitter"></a>
-                            <a href="https://www.facebook.com/MotorbikesTV" target="_blank"
-                                rel="noopener noreferrer"><img width="50" src="../images/facebook.svg"
-                                    alt="Logo de Facebook"></a>
-                            <a href="https://www.instagram.com/motorbikemag/?hl=es" target="_blank"
-                                rel="noopener noreferrer"><img width="50" src="../images/instagram.svg"
-                                    alt="Logo de Instagram"></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-12">
-                    <div data-aos="fade-up">
-                        <div class="suscripcion">
-                            <h4>Suscribite</h4>
-                            <p>Ingresa tu email:</p>
-                            <div class="col-md-12 campoInput">
-                                <input type="email" class="form-control" id="inputEmail4">
-                            </div>
-                            <button type="button" class="btn btn-outline-primary">Enviar</button>
-                        </div>
+  <footer class="footer">
+    <div class="container">
+        <div class="row gy-4">
+            <div class="col-lg-4 col-md-12">
+                <div data-aos="fade-up">
+                    <div class="direccion">
+                        <h4>Informacion de contacto</h4>
+                        <p>Direccion: Avenida 13 Nª 8903 La Plata</p>
+                        <p class="mail">eMail: motorbikes@motors.com</p>
                     </div>
                 </div>
             </div>
+            <div class="col-lg-4 col-md-12">
+                <div data-aos="flip-left">
+                    <div class="redes">
+                        <h4>Seguinos</h4>
+                        <a href="https://twitter.com/MotorbikeMag" target="_blank" rel="noopener noreferrer"><img
+                                width="50" src="../images/twitter.svg" alt="Logo de Twitter"></a>
+                        <a href="https://www.facebook.com/MotorbikesTV" target="_blank"
+                            rel="noopener noreferrer"><img width="50" src="../images/facebook.svg"
+                                alt="Logo de Facebook"></a>
+                        <a href="https://www.instagram.com/motorbikemag/?hl=es" target="_blank"
+                            rel="noopener noreferrer"><img width="50" src="../images/instagram.svg"
+                                alt="Logo de Instagram"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-12">
+                <div data-aos="fade-up">
+                    <div class="suscripcion">
+                        <h4>Suscribite</h4>
+                        <p>Ingresa tu email:</p>
+                        <div class="col-md-12 campoInput">
+                          <input type="email" class="form-control" id="inputEmail4">
+                      </div>
+                        <button type="button" class="btn btn-outline-primary">Enviar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 text-center">
+              <p>Todos los derechos reservados <img width="25" src="../images/copyright.svg" alt="Logo copyright">
+                  ARB</p>
+          </div>
         </div>
-    </footer>
+    </div>
+</footer>
 
     <!--Scripts bootstrap y aos -->
     <script src="../scripts/bootstrap.bundle.min.js"></script>

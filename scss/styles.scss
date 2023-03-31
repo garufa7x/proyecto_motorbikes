@@ -1,9 +1,7 @@
 @import "./componentes/reset";
 @import "./componentes/tipografias";
 
-@mixin cuerpos ($gap, $minHeight, $fontFamily) {
-    gap: $gap;
-    min-height: $minHeight;
+@mixin cuerpos ($fontFamily) {    
     font-family: $fontFamily;
 }
 @mixin contenedorH1($fontFamily, $fontSize, $color, $textAling, $margen){
@@ -25,7 +23,7 @@ $gradienteLineal: linear-gradient(112.1deg, rgba(32, 38, 57, 1) 11.4%, rgba(63, 
 .cuerpoMultimedia,
 .cuerpoContacto {
     background-image: linear-gradient(112.1deg, rgba(32, 38, 57, 1) 11.4%, rgba(63, 76, 119, 1) 70.2%);
-    @include cuerpos(10px, 100vh, "Orbitron");
+    @include cuerpos("Orbitron");
 
 }
 
@@ -46,17 +44,14 @@ $gradienteLineal: linear-gradient(112.1deg, rgba(32, 38, 57, 1) 11.4%, rgba(63, 
 .noticias {
     font-family: "Orbitron";
     text-align: center;
-    .col-md-12.noticia{
-        padding: 16px 12px 16px 12px;
-    }
-
+    
     .card.h-100 {
         .card-text {
             color: black;
         }
 
         &:hover {
-            transform: scale(1.1);
+            transform: scale(1.05);
             transition: all 0.3s;
         }
     }
@@ -84,14 +79,7 @@ $gradienteLineal: linear-gradient(112.1deg, rgba(32, 38, 57, 1) 11.4%, rgba(63, 
     display: flex;
     align-items: flex-start;
     gap: 5px;
-    
-    .card.h-101{
-        background: none;
-        &:hover {
-            transform: scale(1.1);
-            transition: all 0.3s;
-        }
-    }
+        
 }
 
 /*Seccion Historia*/
