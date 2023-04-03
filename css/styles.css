@@ -19,9 +19,13 @@
   font-family: "Orbitron";
 }
 
-/*Pading para la nav*/
+/*Navbar*/
 .navbar.fixed-top.navbar-expand-lg.bg-body-tertiary.bg-dark {
   padding: 4px 0px;
+}
+
+.navbar-toggler {
+  background-color: rgb(138, 135, 135);
 }
 
 /*Titulos*/
@@ -39,6 +43,10 @@
   color: rgb(71, 99, 255);
   text-align: center;
   margin: 50px 0 50px 0;
+}
+
+h2 {
+  color: #e3564d;
 }
 
 /*Seccion Noticias*/

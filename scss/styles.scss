@@ -27,9 +27,12 @@ $gradienteLineal: linear-gradient(112.1deg, rgba(32, 38, 57, 1) 11.4%, rgba(63, 
 
 }
 
-/*Pading para la nav*/
+/*Navbar*/
 .navbar.fixed-top.navbar-expand-lg.bg-body-tertiary.bg-dark {
     padding: 4px 0px;
+}
+.navbar-toggler{
+    background-color: rgb(138, 135, 135);
 }
 
 /*Titulos*/
@@ -38,25 +41,24 @@ $gradienteLineal: linear-gradient(112.1deg, rgba(32, 38, 57, 1) 11.4%, rgba(63, 
        }
 .contenedorH3 {
     @include contenedorH1("Orbitron", 30px, $colorPrincipal, center, 50px 0 50px 0);
-    }       
+    }
+h2{
+    color: #e3564d;
+}
 
 /*Seccion Noticias*/
 .noticias {
     font-family: "Orbitron";
-    text-align: center;
-    
+    text-align: center;    
     .card.h-100 {
         .card-text {
             color: black;
         }
-
         &:hover {
             transform: scale(1.05);
             transition: all 0.3s;
         }
     }
-
-
 }
 
 /*Footer*/
@@ -72,14 +74,12 @@ $gradienteLineal: linear-gradient(112.1deg, rgba(32, 38, 57, 1) 11.4%, rgba(63, 
     .mail{
         color: #ee752f;
     }
-
 }
 
 .redes {
     display: flex;
     align-items: flex-start;
-    gap: 5px;
-        
+    gap: 5px;        
 }
 
 /*Seccion Historia*/
@@ -102,7 +102,6 @@ $gradienteLineal: linear-gradient(112.1deg, rgba(32, 38, 57, 1) 11.4%, rgba(63, 
             }
         }
     }
-
 }
 
 /*Seccion Motos*/
